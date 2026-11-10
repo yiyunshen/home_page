@@ -1,524 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yiyun Shen - Portfolio</title>
-  <style>
-    :root {
-      --columbia-blue: #9BDDFF;
-      --columbia-blue-dark: #72B7DC;
-      --columbia-blue-light: #EBF7FF;
-      --text-main: #1A2B3C;
-      --text-muted: #5A6E7F;
-      --bg-color: #F4F9FC;
-      --card-bg: #FFFFFF;
-      --shadow: 0 4px 12px rgba(26, 43, 60, 0.08);
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Yiyun Shen — Marketing Science at Columbia Business School. Experience in strategy, analytics, and creative storytelling.">
+<meta name="theme-color" content="#B9D9EB">
+<title>Yiyun Shen — Strategy, analytics & a little creativity</title>
+<style>
+:root{--blue:#b9d9eb;--pale:#eaf3f8;--ink:#17384e;--muted:#526b7b;--line:#d6e2e9;--paper:#fbfcfd;--accent:#245c7d}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.65}a{color:inherit;text-underline-offset:4px}a:hover{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.skip{position:absolute;top:-80px;left:20px;background:white;padding:10px;z-index:10}.skip:focus{top:10px}.wrap{max-width:1180px;margin:auto;padding:0 48px}header{position:sticky;top:0;z-index:5;background:rgba(251,252,253,.97);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:82px}.brand{font-size:18px;font-weight:750;text-decoration:none;letter-spacing:-.6px}.brand span{color:var(--accent)}nav{display:flex;gap:28px}nav a{font-size:13px;text-decoration:none;font-weight:600}nav a:hover,nav a[aria-current]{text-decoration:underline}.hero{background:var(--blue);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:72px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:750;margin:0 0 22px}.hero h1{font-size:clamp(64px,7.5vw,98px);line-height:1.02;letter-spacing:-6px;font-weight:600;margin:0 0 24px}.intro{font-size:22px;line-height:1.5;max-width:570px;margin:0 0 12px}.subintro{color:#37596f;max-width:510px;margin:0 0 30px}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;gap:23px;padding:11px 19px;border:1px solid var(--ink);font-size:13px;font-weight:650;text-decoration:none;border-radius:5px}.primary{background:var(--ink);color:white}.primary:hover{background:var(--accent);color:white}.secondary:hover{background:#ffffff55}.hero-note{border-top:1px solid #17384e33;padding:24px 0 0;margin-top:45px;font-size:12px;color:#37596f}.identity-art{aspect-ratio:1;position:relative;display:grid;place-items:center;border:1px solid #17384e28;border-radius:50%;max-width:335px;width:100%;justify-self:end;background:#ffffff13}.identity-art:before,.identity-art:after{content:"";position:absolute;border:1px solid #17384e28;border-radius:50%;inset:25px}.identity-art:after{inset:55px}.monogram{font-family:Georgia,serif;font-style:italic;font-size:114px;letter-spacing:-12px;padding-right:14px}.orbit-label{position:absolute;bottom:15px;background:var(--blue);padding:0 15px;font-size:10px;letter-spacing:2px;text-transform:uppercase}.section{display:grid;grid-template-columns:215px minmax(0,1fr);gap:45px;padding-top:68px;padding-bottom:68px;border-bottom:1px solid var(--line);scroll-margin-top:12px}.section-label .num{font-size:11px;letter-spacing:2px;color:var(--accent);margin-bottom:10px;display:block}.section h2{font-size:27px;line-height:1.2;font-weight:550;letter-spacing:-1px;margin:0 0 15px}.section-label p{font-size:13px;color:var(--muted);margin:0;max-width:170px}.stack{display:grid;gap:20px}.education{padding:29px 30px;background:var(--pale);border-radius:8px;border:1px solid #dbe8ef}.entry-top{display:flex;justify-content:space-between;gap:20px;align-items:baseline}h3{font-size:20px;letter-spacing:-.4px;line-height:1.4;margin:0 0 5px;font-weight:650}.date{white-space:nowrap;font-size:12px;color:var(--muted)}.degree{font-size:15px;margin:3px 0}.location{font-size:12px;color:var(--muted);margin:3px 0 18px}.detail{font-size:14px;margin:10px 0 0}.detail strong{font-weight:650}.job{padding:28px 0;border-bottom:1px solid var(--line)}.job:first-child{padding-top:0}.job:last-child{border:0;padding-bottom:0}.company{font-size:22px}.role{font-size:14px;color:var(--accent);font-weight:600;margin:0 0 4px}.job .location{margin-bottom:16px}.job ul{padding-left:18px;margin:0;font-size:14px;color:#385264}.job li{padding-left:5px;margin:0 0 11px}.job li:last-child{margin-bottom:0}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info-tile{border:1px solid var(--line);border-radius:8px;padding:25px;background:white}.info-tile h3{font-size:15px;margin-bottom:14px}.info-tile p{font-size:14px;color:var(--muted);margin:0}.tags{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:0}.tags li{font-size:12px;padding:4px 9px;background:var(--pale);border-radius:4px;color:#37596f}.footer{padding:38px 0 42px;display:flex;justify-content:space-between;gap:24px;font-size:12px;color:var(--muted)}.footer p{margin:0}.contact-links{display:flex;flex-wrap:wrap;gap:18px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline}@media(min-width:900px){.section-label{position:sticky;top:120px;align-self:start}}@media(max-width:800px){.wrap{padding:0 25px}.hero-grid{grid-template-columns:1fr;padding-top:55px;padding-bottom:45px;gap:0}.identity-art{display:none}.hero h1{letter-spacing:-4px;font-size:72px}.intro{font-size:21px}.section{grid-template-columns:1fr;gap:28px;padding-top:42px;padding-bottom:42px}.section-label p{max-width:none}.section-label .num{display:inline-block;margin-right:10px}.section h2{display:inline-block;font-size:26px}.section-label p{margin-top:0}.nav{min-height:72px;gap:15px}nav{gap:18px}nav a{font-size:12px}.hero-note{margin-top:30px}}@media(max-width:480px){.wrap{padding:0 20px}.nav{align-items:flex-start;flex-direction:column;justify-content:center;gap:5px;padding-top:10px;padding-bottom:10px}nav{gap:22px}.brand{font-size:16px}.hero h1{font-size:62px}.hero-grid{padding-top:42px}.intro{font-size:20px}.education{padding:22px}.entry-top{display:block}.date{display:block;margin:4px 0 8px}.info-grid{grid-template-columns:1fr}.footer{flex-direction:column;gap:15px}.button{gap:18px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.identity-art,.actions{display:none}.hero{background:none}.hero-grid{padding:20px 0;display:block}.hero h1{font-size:50px}.hero-note{margin-top:15px}.wrap{padding:0 20px}.section{padding:25px 0;gap:20px;grid-template-columns:160px 1fr}.section-label{position:static}.education,.info-tile{break-inside:avoid}.job{break-inside:avoid}.footer{padding:20px 0}}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      line-height: 1.6;
-      padding-top: 80px;
-    }
-
-    /* Streamlined Navigation */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      z-index: 1000;
-    }
-
-    nav {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav-logo {
-      font-weight: 700;
-      font-size: 1.2rem;
-      color: var(--text-main);
-      text-decoration: none;
-      letter-spacing: 0.5px;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 1.5rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--text-muted);
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--columbia-blue-dark);
-    }
-
-    /* Layout & Hero */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-
-    .hero-card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      padding: 2.5rem;
-      box-shadow: var(--shadow);
-      border-top: 6px solid var(--columbia-blue);
-      margin-bottom: 3rem;
-      text-align: center;
-    }
-
-    .hero-card h1 {
-      font-size: 2.5rem;
-      color: var(--text-main);
-      margin-bottom: 0.5rem;
-      letter-spacing: 1px;
-    }
-
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    .contact-info a {
-      color: var(--text-main);
-      text-decoration: none;
-      border-bottom: 2px solid var(--columbia-blue);
-      transition: background 0.2s ease;
-    }
-
-    .contact-info a:hover {
-      background: var(--columbia-blue-light);
-    }
-
-    /* Interactive Filter Controls */
-    .filter-container {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .filter-label {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      margin-right: 0.5rem;
-    }
-
-    .filter-btn {
-      background: var(--card-bg);
-      border: 1px solid var(--columbia-blue);
-      color: var(--text-main);
-      padding: 0.4rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .filter-btn:hover, .filter-btn.active {
-      background: var(--columbia-blue);
-      color: #000;
-      font-weight: 600;
-    }
-
-    /* Sections & Tile Layout */
-    .section-title {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--text-main);
-      border-bottom: 2px solid var(--columbia-blue-light);
-      padding-bottom: 0.5rem;
-    }
-
-    section {
-      margin-bottom: 3.5rem;
-      scroll-margin-top: 100px;
-    }
-
-    .tile-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .tile {
-      background: var(--card-bg);
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: var(--shadow);
-      border-left: 4px solid var(--columbia-blue);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .tile:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(26, 43, 60, 0.12);
-    }
-
-    .tile-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .tile-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-    }
-
-    .tile-subtitle {
-      font-size: 1rem;
-      color: var(--columbia-blue-dark);
-      font-weight: 600;
-    }
-
-    .tile-meta {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      text-align: right;
-    }
-
-    .tile-body {
-      margin-top: 0.75rem;
-      font-size: 0.95rem;
-    }
-
-    .tile-body ul {
-      padding-left: 1.2rem;
-    }
-
-    .tile-body li {
-      margin-bottom: 0.4rem;
-    }
-
-    .tag {
-      display: inline-block;
-      background: var(--columbia-blue-light);
-      color: var(--text-main);
-      font-size: 0.75rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      margin-top: 0.5rem;
-      margin-right: 0.3rem;
-      font-weight: 500;
-    }
-
-    /* Skills & Info Layout */
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .info-card {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-    }
-
-    .info-card h4 {
-      margin-bottom: 0.75rem;
-      color: var(--text-main);
-      border-bottom: 1px solid var(--columbia-blue-light);
-      padding-bottom: 0.25rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      border-top: 1px solid var(--columbia-blue-light);
-    }
-
-    @media (max-width: 600px) {
-      .tile-header {
-        flex-direction: column;
-      }
-      .tile-meta {
-        text-align: left;
-      }
-      .nav-links {
-        gap: 0.8rem;
-        font-size: 0.85rem;
-      }
-    }
-  </style>
+/* Portfolio and personal sections */
+nav{gap:22px}nav a{white-space:nowrap}.portrait{margin:0;max-width:350px;width:100%;justify-self:end;transform:rotate(2deg);padding:10px 10px 0;background:#f8fbfd;box-shadow:0 16px 40px #17384e18;border-radius:5px}.portrait img{display:block;width:100%;height:365px;object-fit:cover;object-position:50% 45%;border-radius:2px}.portrait figcaption{display:flex;justify-content:space-between;font-size:12px;letter-spacing:1px;padding:12px 5px}.portrait figcaption span{color:var(--muted)}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.project-card{overflow:hidden;background:white;border:1px solid var(--line);border-radius:8px;display:flex;flex-direction:column}.project-visual{display:block;background:#121218;overflow:hidden}.project-visual img{display:block;width:100%;height:auto;transition:transform .25s}.project-visual:hover img{transform:scale(1.025)}.project-copy{padding:22px;display:flex;flex:1;flex-direction:column;align-items:flex-start}.project-category{font-size:10px!important;text-transform:uppercase;letter-spacing:1.1px;color:var(--accent)!important;margin:0 0 10px!important}.project-copy h3{font-size:20px}.project-copy p{font-size:13px;color:var(--muted);margin:8px 0 18px}.project-badge{font-size:11px;font-weight:650;background:var(--pale);border-radius:4px;padding:4px 9px;margin-top:auto}.text-link{display:inline-block;font-size:12px;font-weight:650;margin-top:18px}.about-intro{font-size:28px;line-height:1.35;letter-spacing:-.6px;margin:0 0 15px}.about-description{font-size:15px;color:var(--muted);margin:0 0 22px;max-width:620px}.personality{gap:9px;margin-bottom:35px}.personality li{background:var(--blue);color:var(--ink);padding:6px 13px;border-radius:30px}.interest-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px 35px}.interest-grid article{border-top:1px solid var(--line);padding-top:15px}.interest-grid span{font-size:10px;color:var(--accent);letter-spacing:1px}.interest-grid h3{font-size:17px;margin-top:5px}.interest-grid p{font-size:13px;color:var(--muted);margin:8px 0 0}.gallery-heading{margin:40px 0 18px}.gallery-heading h3{font-size:20px}.gallery-heading p{font-size:13px;color:var(--muted);margin:3px 0}.photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.photo-gallery figure{margin:0}.photo-gallery img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:5px}.photo-gallery figcaption{font-size:11px;color:var(--muted);margin-top:8px}
+@media(max-width:1000px){nav{gap:16px}.nav{gap:20px}.hero-grid{gap:30px}.portrait img{height:310px}}
+@media(max-width:800px){.nav{align-items:flex-start;flex-direction:column;gap:8px;padding-top:13px;padding-bottom:13px}nav{width:100%;overflow-x:auto;gap:24px;padding:0 0 4px}.hero-grid{grid-template-columns:1fr 210px;gap:25px}.hero h1{font-size:60px}.intro{font-size:18px}.portrait img{height:250px}.portrait{padding:7px 7px 0}.portrait figcaption{font-size:10px;letter-spacing:0}.hero-note{font-size:11px}.section-label .text-link{margin-top:10px}.section-label p{max-width:none}}
+@media(max-width:600px){.hero-grid{grid-template-columns:1fr;gap:32px}.portrait{max-width:265px;justify-self:start;transform:rotate(-2deg)}.portrait img{height:280px}.project-grid{grid-template-columns:1fr}.interest-grid{gap:20px}.photo-gallery{gap:8px}.photo-gallery figcaption{font-size:10px}.about-intro{font-size:25px}.hero h1{font-size:62px}.hero-note{margin-top:25px}}
+@media(prefers-reduced-motion:reduce){.project-visual img{transition:none}}
+@media print{.portrait{max-width:180px;transform:none;box-shadow:none}.portrait img{height:180px}.project-card,.photo-gallery figure{break-inside:avoid}}
+</style>
+<link rel="stylesheet" href="lively.css">
+<script src="interactions.js" defer></script>
 </head>
-<body>
+<body id="top">
+<div class="reading-progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav"><a class="brand" href="#top">Yiyun Shen<span>.</span></a><nav aria-label="Main navigation"><a href="#education">Education</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">More About Me</a></nav></div></header>
+<main id="main">
+<section class="hero" aria-labelledby="intro-title"><div class="wrap hero-grid"><div><p class="eyebrow"><span class="hello-spark" aria-hidden="true">✳</span> Strategy · Analytics · Creativity</p><h1 id="intro-title">Hi, I’m <span class="name-mark">Yiyun.</span></h1><p class="intro">Connecting data, business strategy,<br>and the stories that move people.</p><p class="subintro">Marketing Science at Columbia Business School.<br>Experience across e-commerce, beauty, and communications.</p><div class="actions"><a class="button primary" href="https://www.linkedin.com/in/yiyunshen0602/" target="_blank" rel="noopener noreferrer">Connect with me <span aria-hidden="true">↗</span></a><a class="button secondary" href="output/pdf/Yiyun_Shen_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a></div><div class="hero-note">New York, NY <span aria-hidden="true">&nbsp; / &nbsp;</span> A background in Shanghai, a perspective across markets.</div></div><figure class="portrait"><img src="assets/yiyun-shen.jpg" width="2048" height="1536" alt="Yiyun Shen by the waterfront"><figcaption>Yiyun Shen <span>沈逸云</span></figcaption></figure></div></section>
+<div class="wrap">
+<section class="section" id="education" aria-labelledby="education-title"><div class="section-label"><span class="num">01 / LEARNING</span><h2 id="education-title">Education</h2><p>From language and literature to marketing science.</p></div><div class="stack">
+<article class="education"><div class="entry-top"><h3>Columbia Business School</h3><span class="date">2026–2028</span></div><p class="degree">MS, Marketing Science · February 2028</p><p class="location">New York, NY</p><p class="detail"><strong>Related coursework:</strong> Advanced Marketing Analytics, Generative AI for Business, Python Programming for Data Science, Statistical Modeling and Decision Making, Marketing Consulting Skills</p><p class="detail"><strong>Member:</strong> AI Club, Product Marketing Club, Outdoors Club</p></article>
+<article class="education"><div class="entry-top"><h3>East China Normal University</h3><span class="date">2022–2026</span></div><p class="degree">BA, English Literature · June 2026</p><p class="location">Shanghai, China</p><p class="detail"><strong>Minor:</strong> Finance (GPA: 3.8/4.0, Top 10 of the class)</p><p class="detail"><strong>Honors:</strong> National Scholarship for 2024–2025 Academic Year; GPA: 3.9/4.00 (Rank 1st of class)</p><p class="detail"><strong>Leadership:</strong> Co-President of Spanish Club; Peer Career Advisor</p></article>
+</div></section>
+<section class="section" id="experience" aria-labelledby="experience-title"><div class="section-label"><span class="num">02 / DOING</span><h2 id="experience-title">Experience</h2><p>Turning research and analysis into practical next steps.</p></div><div>
+<article class="job"><div class="entry-top"><h3 class="company">SHEIN</h3><span class="date">Spring &amp; Summer 2026</span></div><p class="role">Strategy Analyst Intern</p><p class="location">Shanghai, China</p><ul><li>Tracked competitors’ weekly GMV, AOV, and other core performance metrics across 15 key markets, building and maintaining online dashboards to visualize market-level trends and support ongoing business monitoring.</li><li>Conducted desk research on specific topics, covering DSP/SSP ecosystems in North America and self-operated retail strategies such as JD.com; synthesized findings into recommendations for platform and product strategy.</li><li>Leveraged AI to automate competitive-monitoring workflows, building reusable AI skills to retrieve competitor pricing and DAU data, consolidate results into Excel, and generate standardized reports; improved workflow efficiency by 80%.</li></ul></article>
+<article class="job"><div class="entry-top"><h3 class="company">Byte Dance</h3><span class="date">Summer &amp; Fall 2025</span></div><p class="role">Strategic Operations Intern</p><p class="location">Shanghai, China</p><ul><li>Analyzed GMV contribution and growth patterns of newly onboarded Mall sellers, identifying performance gaps and recommending targeted operational interventions, which contributed to 0.2/5.0 seller rating raise and 2% GMV growth.</li><li>Leveraged AI to streamline the Mall onboarding workflow and revamp the review process, reducing review time by 40% and increasing Mall onboarding penetration from 9% to 12%.</li><li>Coordinated Mall sellers’ participation in major promotional campaigns; managed homepage banner placements and negotiated promotional resources; partnered with the product team to launch an automation tool to facilitate seller application process.</li></ul></article>
+<article class="job"><div class="entry-top"><h3 class="company">Estée Lauder</h3><span class="date">Summer 2025</span></div><p class="role">Strategy Analyst Intern</p><p class="location">Shanghai, China</p><ul><li>Analyzed sell-in and sell-out data monthly to identify market preferences and consumer demands, supported forecast optimization with Demand Planning team for regional Marketing Director to define business ambitions.</li><li>Evaluated product performance across Sephora’s online channel and 50+ offline stores across the country during promotion periods, benchmarking competitor pricing and promotional strategies to support product pricing and trade marketing plans.</li></ul></article>
+<article class="job"><div class="entry-top"><h3 class="company">BAO Communications</h3><span class="date">Spring 2025</span></div><p class="role">Public Relations Intern</p><p class="location">Based in NYC · Remote from Shanghai</p><ul><li>Identified and evaluated 100+ influencers across Instagram, YouTube, and TikTok based on client objectives, supporting influencer outreach, campaign execution, and performance assessment.</li><li>Collaborated with Nongfu Spring to produce and edit 20 short-form videos, generating 200K+ views and 10K+ engagements; designed and managed daily content publishing across multiple social media channels.</li></ul></article>
+<article class="job"><div class="entry-top"><h3 class="company">Atheneum</h3><span class="date">Spring 2024</span></div><p class="role">Strategic Consulting Intern</p><p class="location">Shanghai, China</p><ul><li>Collected, structured, and visualized pharmaceutical market, industry, and competitor data across Asian markets using Excel, mapping hospital resources, physician profiles, and healthcare stakeholders to support market analysis.</li><li>Conducted expert interviews with healthcare professionals to gather primary insights on medical reimbursement systems, pharmaceutical registration requirements, and market dynamics, synthesizing findings into client-ready reports.</li></ul></article>
+</div></section>
+<section class="section" id="projects" aria-labelledby="projects-title"><div class="section-label"><span class="num">03 / MAKING</span><h2 id="projects-title">Projects</h2><p>A selection of strategy, storytelling, and design work.</p><a class="text-link" href="Yiyun_Shen_Portfolio_EN.pdf" target="_blank" rel="noopener">Full portfolio ↗</a></div><div class="projects-content"><div class="project-filters" role="group" aria-label="Filter projects" hidden><button type="button" data-filter="all" aria-pressed="true">All projects <span>6</span></button><button type="button" data-filter="social" aria-pressed="false">Social &amp; storytelling</button><button type="button" data-filter="strategy" aria-pressed="false">Strategy</button><button type="button" data-filter="design" aria-pressed="false">Design &amp; UI</button></div><p class="sr-only" id="project-status" role="status"></p><div class="project-grid"><article class="project-card"><a class="project-visual" href="Yiyun_Shen_Portfolio_EN.pdf#page=2" target="_blank" rel="noopener" aria-label="View BAO Communications in portfolio, page 2"><img src="assets/project-bao-communications.png" width="1200" height="675" loading="lazy" alt="BAO Communications project spread from Yiyun’s portfolio"></a><div class="project-copy"><p class="project-category">Social content · Original visual design</p><h3>BAO Communications</h3><p>Built a Xiaohongshu account from zero, creating an original visual identity and branded social content.</p><span class="project-badge">Account built from zero</span><a class="text-link" href="Yiyun_Shen_Portfolio_EN.pdf#page=2" target="_blank" rel="noopener" aria-label="View BAO Communications project">View project ↗</a></div></article><article class="project-card"><a class="project-visual" href="Yiyun_Shen_Portfolio_EN.pdf#page=3" target="_blank" rel="noopener" aria-label="View 纽语花香 in portfolio, page 3"><img src="assets/project-ny-community.png" width="1200" height="675" loading="lazy" alt="纽语花香 project spread from Yiyun’s portfolio"></a><div class="project-copy"><p class="project-category">Social content · Co-created account</p><h3>纽语花香</h3><p>Co-created a community account with visual content covering New York outings, local culture, and family activities.</p><span class="project-badge">Community &amp; culture</span><a class="text-link" href="Yiyun_Shen_Portfolio_EN.pdf#page=3" target="_blank" rel="noopener" aria-label="View 纽语花香 project">View project ↗</a></div></article><article class="project-card"><a class="project-visual" href="Yiyun_Shen_Portfolio_EN.pdf#page=4" target="_blank" rel="noopener" aria-label="View SpeakCo 思湃教育 in portfolio, page 4"><img src="assets/project-speakco.png" width="1200" height="675" loading="lazy" alt="SpeakCo 思湃教育 project spread from Yiyun’s portfolio"></a><div class="project-copy"><p class="project-category">Social content · Co-created account</p><h3>SpeakCo 思湃教育</h3><p>Co-created an education account, with social visuals introducing SpeakCo Academy and English public-speaking content.</p><span class="project-badge">Education &amp; storytelling</span><a class="text-link" href="Yiyun_Shen_Portfolio_EN.pdf#page=4" target="_blank" rel="noopener" aria-label="View SpeakCo 思湃教育 project">View project ↗</a></div></article><article class="project-card"><a class="project-visual" href="Yiyun_Shen_Portfolio_EN.pdf#page=5" target="_blank" rel="noopener" aria-label="View Budweiser in portfolio, page 5"><img src="assets/project-budweiser.png" width="1200" height="675" loading="lazy" alt="Budweiser project spread from Yiyun’s portfolio"></a><div class="project-copy"><p class="project-category">Business competition · 2024</p><h3>Budweiser</h3><p>Led visual design and all data presentation for a case on Budweiser’s premiumization strategy in the current macroeconomic landscape.</p><span class="project-badge">Top 10</span><a class="text-link" href="Yiyun_Shen_Portfolio_EN.pdf#page=5" target="_blank" rel="noopener" aria-label="View Budweiser project">View project ↗</a></div></article><article class="project-card"><a class="project-visual" href="Yiyun_Shen_Portfolio_EN.pdf#page=6" target="_blank" rel="noopener" aria-label="View Bain in portfolio, page 6"><img src="assets/project-bain.png" width="1200" height="675" loading="lazy" alt="Bain project spread from Yiyun’s portfolio"></a><div class="project-copy"><p class="project-category">Business competition · 2024</p><h3>Bain</h3><p>Led visual design and all data presentation for a case exploring Yada’s growth strategy in mainland China’s elderly care market.</p><span class="project-badge">Top 10%</span><a class="text-link" href="Yiyun_Shen_Portfolio_EN.pdf#page=6" target="_blank" rel="noopener" aria-label="View Bain project">View project ↗</a></div></article><article class="project-card"><a class="project-visual" href="Yiyun_Shen_Portfolio_EN.pdf#page=7" target="_blank" rel="noopener" aria-label="View L’Oréal Brainstorm in portfolio, page 7"><img src="assets/project-loreal.png" width="1200" height="675" loading="lazy" alt="L’Oréal Brainstorm project spread from Yiyun’s portfolio"></a><div class="project-copy"><p class="project-category">Business competition · Figma UI</p><h3>L’Oréal Brainstorm</h3><p>Created visual design and Figma UI for StyleVue, a personalized hairstyle preview and salon mini-program concept.</p><span class="project-badge">Visual design + Figma</span><a class="text-link" href="Yiyun_Shen_Portfolio_EN.pdf#page=7" target="_blank" rel="noopener" aria-label="View L’Oréal Brainstorm project">View project ↗</a></div></article></div></div></section>
+<section class="section" id="skills" aria-labelledby="skills-title"><div class="section-label"><span class="num">04 / THE TOOLKIT</span><h2 id="skills-title">Skills</h2><p>Analytical tools, creative tools, and languages.</p></div><div class="info-grid">
+<article class="info-tile"><h3>Data analytics</h3><ul class="tags"><li>Excel</li><li>Python</li><li>SQL (Google BigQuery)</li><li>SPSS</li><li>Tableau</li></ul></article>
+<article class="info-tile"><h3>Content &amp; design</h3><ul class="tags"><li>Canva</li><li>Capcut</li><li>Figma</li><li>Powerpoint</li><li>AI</li><li>Photoshop</li><li>Vibe coding</li></ul></article>
+<article class="info-tile"><h3>Languages</h3><p>Chinese (Native)<br>English (Fluent, TOEFL 113)<br>Spanish (Conversational)</p></article>
 
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <a href="#" class="nav-logo">YIYUN SHEN</a>
-      <ul class="nav-links">
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#additional">Additional Info</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-
-    <!-- Hero Card -->
-    <div class="hero-card">
-      <h1>YIYUN SHEN</h1>
-      <div class="contact-info">
-        <span>+1 6462699969</span>
-        <a href="mailto:ys4081@gsb.columbia.edu">ys4081@gsb.columbia.edu</a>
-        <a href="https://www.linkedin.com/in/yiyunshen0602/" target="_blank" rel="noopener">LinkedIn Profile</a>
-      </div>
-    </div>
-
-    <!-- Education Section -->
-    <section id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="tile-grid">
-        
-        <div class="tile">
-          <div class="tile-header">
-            <div>
-              <div class="tile-title">Columbia Business School</div>
-              <div class="tile-subtitle">MS, Marketing Science</div>
-            </div>
-            <div class="tile-meta">
-              <div>New York, NY</div>
-              <div>Feb 2028 | GRE: 326</div>
-            </div>
-          </div>
-          <div class="tile-body">
-            <p>A highly selective, industry-oriented program which combines PhD and MBA courses to provide advanced statistical expertise and a strategic approach to marketing research and analytics.</p>
-            <div style="margin-top: 0.5rem;">
-              <strong>Related Coursework:</strong> Marketing Consulting Skills, Advanced Marketing Analytics, Python Programming for Data Science, Statistical Modeling and Decision Making, Generative AI for Business
-            </div>
-          </div>
-        </div>
-
-        <div class="tile">
-          <div class="tile-header">
-            <div>
-              <div class="tile-title">East China Normal University</div>
-              <div class="tile-subtitle">BA, English</div>
-            </div>
-            <div class="tile-meta">
-              <div>Shanghai, China</div>
-              <div>Jun 2026 | GPA: 3.88/4.00</div>
-            </div>
-          </div>
-          <div class="tile-body">
-            <p><strong>Minor:</strong> Finance</p>
-            <p><strong>Honors:</strong> National Scholarship for 2024-2025 Academic Year</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2 class="section-title">Experience</h2>
-      
-      <!-- Interactive Filter Controls -->
-      <div class="filter-container">
-        <span class="filter-label">Filter Focus:</span>
-        <button class="filter-btn active" onclick="filterExperience('all')">Show All</button>
-        <button class="filter-btn" onclick="filterExperience('strategy')">Strategy & Analytics</button>
-        <button class="filter-btn" onclick="filterExperience('digital')">Digital Marketing & PR</button>
-      </div>
-
-      <div class="tile-grid">
-
-        <div class="tile" data-category="strategy">
-          <div class="tile-header">
-            <div>
-              <div class="tile-title">SHEIN</div>
-              <div class="tile-subtitle">Strategy Analyst Intern</div>
-            </div>
-            <div class="tile-meta">
-              <div>Shanghai, China</div>
-              <div>2026.3 – 2026.7</div>
-            </div>
-          </div>
-          <div class="tile-body">
-            <ul>
-              <li>Built a pricing monitoring framework for 5 European markets across 4 product categories; developed AI-assisted dashboards to track key business metrics, monitoring DAU and downloads of competitors across 15 markets.</li>
-              <li>Conducted market research and strategic analysis on the e-commerce and digital advertising landscape, producing benchmarking reports to support business and investment decisions.</li>
-              <li>Tracked competitors' platform features, merchant compliance, and logistics developments through expert interviews, seller training, and financial reports, delivering regular competitive intelligence reports.</li>
-            </ul>
-            <span class="tag">E-Commerce</span><span class="tag">Market Research</span><span class="tag">AI Dashboards</span>
-          </div>
-        </div>
-
-        <div class="tile" data-category="strategy">
-          <div class="tile-header">
-            <div>
-              <div class="tile-title">ByteDance</div>
-              <div class="tile-subtitle">Strategic Operations Intern</div>
-            </div>
-            <div class="tile-meta">
-              <div>Shanghai, China</div>
-              <div>2025.6 – 2025.11</div>
-            </div>
-          </div>
-          <div class="tile-body">
-            <ul>
-              <li>Conducted multi-dimensional index screening for merchants entering the TTS mall, maintained the database and product pool, configured homepage banners, and handled on-calls related to business operations.</li>
-              <li>Tracked core store performance indicators through data analysis across multiple dimensions, offboarding merchants failing to meet standards for 3 consecutive months.</li>
-              <li>Participated in reviewing the newly added brand tone in mid-July, collaborating with product and RD teams to run product tests and author feedback reports.</li>
-            </ul>
-            <span class="tag">Operations</span><span class="tag">Data Analysis</span><span class="tag">Cross-functional</span>
-          </div>
-        </div>
-
-        <div class="tile" data-category="strategy">
-          <div class="tile-header">
-            <div>
-              <div class="tile-title">Estée Lauder</div>
-              <div class="tile-subtitle">Strategy Analyst Intern</div>
-            </div>
-            <div class="tile-meta">
-              <div>Shanghai, China</div>
-              <div>2025.1 – 2026.6</div>
-            </div>
-          </div>
-          <div class="tile-body">
-            <ul>
-              <li>Analyzed and synthesized comprehensive Sephora channel sales data from online and offline sources; independently generated and delivered monthly brand performance reports to inform strategic decision-making.</li>
-              <li>Conducted in-depth competitive analysis during key promotional campaigns (e.g., Chinese Valentine’s Day), tracking and comparing competitors across physical and online channels to guide marketing adjustments.</li>
-            </ul>
-            <span class="tag">Retail Analytics</span><span class="tag">Competitive Analysis</span><span class="tag">Reporting</span>
-          </div>
-        </div>
-
-        <div class="tile" data-category="digital">
-          <div class="tile-header">
-            <div>
-              <div class="tile-title">Bao Communications</div>
-              <div class="tile-subtitle">Public Relations Intern</div>
-            </div>
-            <div class="tile-meta">
-              <div>Remote from Shanghai (NYC Base)</div>
-              <div>2025.4 – 2025.6</div>
-            </div>
-          </div>
-          <div class="tile-body">
-            <ul>
-              <li>Identified and reached out to targeted influencers on Instagram, YouTube, and TikTok to complete assessments and promotions for over 100 top-tier creators.</li>
-              <li>Partnered with Nongfu Spring influencers to edit 20 short videos, balancing individual creator styles with target brand messaging.</li>
-            </ul>
-            <span class="tag">Influencer Marketing</span><span class="tag">Content Strategy</span><span class="tag">Media Outreach</span>
-          </div>
-        </div>
-
-        <div class="tile" data-category="digital">
-          <div class="tile-header">
-            <div>
-              <div class="tile-title">Gusto Collective</div>
-              <div class="tile-subtitle">Digital Marketing Intern</div>
-            </div>
-            <div class="tile-meta">
-              <div>Shanghai, China</div>
-              <div>2024.8 – 2024.12</div>
-            </div>
-          </div>
-          <div class="tile-body">
-            <ul>
-              <li>Managed daily content publishing and community engagement on RED, Weibo, and WeChat; evaluated monthly advertising effectiveness and conversion efficiency via data-driven reports.</li>
-              <li>Monitored competitor campaigns in personal care and luxury retail, researching celebrity endorsement strategies and promotional techniques to inform client proposals.</li>
-            </ul>
-            <span class="tag">Social Media</span><span class="tag">Luxury & Personal Care</span><span class="tag">Campaign Research</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Additional Information Section -->
-    <section id="additional">
-      <h2 class="section-title">Additional Information</h2>
-      <div class="info-grid">
-        
-        <div class="info-card">
-          <h4>Technical Skills</h4>
-          <p>Python, SQL, Office (Excel, PowerPoint, Word), Canva, CapCut</p>
-        </div>
-
-        <div class="info-card">
-          <h4>Languages</h4>
-          <p>English (TOEFL: 113, GRE: 326)</p>
-          <p>Spanish (A2)</p>
-        </div>
-
-        <div class="info-card">
-          <h4>Interests</h4>
-          <p>Movies, Reading, Badminton, Yoga</p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Yiyun Shen. Built for GitHub Pages.</p>
-  </footer>
-
-  <!-- Filter Functionality Script -->
-  <script>
-    function filterExperience(category) {
-      const buttons = document.querySelectorAll('.filter-btn');
-      const tiles = document.querySelectorAll('#experience .tile');
-
-      buttons.forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
-
-      tiles.forEach(tile => {
-        if (category === 'all' || tile.getAttribute('data-category') === category) {
-          tile.style.display = 'block';
-        } else {
-          tile.style.display = 'none';
-        }
-      });
-    }
-  </script>
+</div></section>
+<section class="section" id="about" aria-labelledby="about-title"><div class="section-label"><span class="num">05 / OFF THE CLOCK</span><h2 id="about-title">More About Me</h2><p>A little of the person behind the projects.</p><a class="text-link" href="https://www.instagram.com/ceeelia_62/" target="_blank" rel="noopener noreferrer">Instagram @ceeelia_62 ↗</a></div><div class="about-content"><p class="about-intro">Outgoing, communicative, and always curious.</p><p class="about-description">I enjoy connecting with people and finding new perspectives — through a good film, a book, or the lens of my camera.</p><div class="bubble-world"><p class="bubble-hint" hidden>Pick a bubble. Get to know me.</p><ul class="personality" aria-label="Personality"><li>Outgoing</li><li>Communicative</li><li>Curious</li><li>Creative</li><li>Collaborative</li></ul><p class="bubble-note" role="status">A little people energy. A lot of curiosity.</p></div><div class="interest-grid"><article><span aria-hidden="true">01</span><h3>Film &amp; musicals</h3><p>Movies, memorable stories, and Hamilton on repeat. A Hamilton superfan.</p><a class="film-link" href="watched-films.html" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶</span> Visit my film blog <span aria-hidden="true">↗</span></a></article><article><span aria-hidden="true">02</span><h3>Reading</h3><p>A good book and a new perspective. Sally Rooney is a favorite.</p></article><article><span aria-hidden="true">03</span><h3>Photography</h3><p>Architecture, everyday details, and moments worth keeping.</p></article><article><span aria-hidden="true">04</span><h3>Yoga &amp; badminton</h3><p>Time to move, reset, and recharge.</p></article></div><div class="gallery-heading"><h3>Through my lens</h3><p>Photography and video stills from my Instagram.</p></div><div class="photo-gallery">
+<figure><a href="https://www.instagram.com/p/Dep3Pq7iYfM/" target="_blank" rel="noopener noreferrer"><img src="assets/photography-city.jpg" loading="lazy" alt="Instagram video preview of boats on a river beneath city buildings"></a><figcaption>City perspectives · video still</figcaption></figure>
+<figure><a href="https://www.instagram.com/ceeelia_62/" target="_blank" rel="noopener noreferrer"><img class="full-photo" src="assets/photography-fall.jpg" loading="lazy" alt="Autumn trees and people on stone steps framed by a New York City archway"></a><figcaption>Fall in NYC</figcaption></figure>
+<figure><a href="https://www.instagram.com/p/Dbjb6Rnkx2O/" target="_blank" rel="noopener noreferrer"><img src="assets/photography-paris.jpg" loading="lazy" alt="Instagram video preview of the Eiffel Tower and the Seine at sunset"></a><figcaption>A Paris moment · video still</figcaption></figure>
+</div></div></section>
+<footer class="footer"><div><p>Yiyun Shen</p><p><a href="mailto:ys4081@gsb.columbia.edu">ys4081@gsb.columbia.edu</a></p></div><div class="contact-links"><a href="https://www.linkedin.com/in/yiyunshen0602/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/yiyunshen/home_page" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#top">Back to top ↑</a></div></footer>
+</div>
+</main>
+<dialog class="preview-dialog" aria-labelledby="preview-title"><div class="preview-toolbar"><h2 id="preview-title">Quick look</h2><button type="button" class="preview-close" aria-label="Close image preview">Close ×</button></div><img class="preview-image" alt=""><p class="preview-caption"></p><a class="preview-source" target="_blank" rel="noopener noreferrer">Open original ↗</a></dialog>
+<script>
+const sections = document.querySelectorAll('main section[id]');
+const links = document.querySelectorAll('nav a');
+if ('IntersectionObserver' in window) {
+ const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+   if (entry.isIntersecting) links.forEach(link => {
+    if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+   });
+  });
+ }, {rootMargin: '-15% 0px -60% 0px'});
+ sections.forEach(section => observer.observe(section));
+}
+</script>
 </body>
 </html>
